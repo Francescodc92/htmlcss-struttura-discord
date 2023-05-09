@@ -1,5 +1,79 @@
+/*----------
+Reset
+----------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+/*----------
+General
+----------*/
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+}
+
+.container:not(.header-top .container) {
+  padding-block: 30px;
+}
+/*---------
+Header
+----------*/
+.header-top {
+  padding-block: 15px;
+}
+
+.header-top .container > * {
+  padding: 7px 5px;
+}
+
+.header-top .container .logo-container,
+.header-top .container .log-in {
+  width: 15%;
+}
+
+.header-top .container .log-in {
+  text-align: right;
+}
+
+.header-top nav {
+  width: 70%;
+  text-align: center;
+}
+
+.header-bottom .container {
+  align-items: center;
+  justify-content: center;
+}
+
+.header-bottom .container .content-container {
+  border-radius: 5px;
+  margin-inline: auto;
+}
+
+/*------------
+Debug
+-------------*/
+.debug .header-top {
+  background-color: #add8e6;
+}
+
+.debug .header-top .container > * {
+  background-color: #daa520;
+  border: 1px dashed black;
+}
+
+.debug .header-bottom {
+  background-color: #00008b;
+}
+
+.debug .header-bottom .container > * {
+  border: 1px dashed black;
+}
+.debug .header-bottom .container .content-container {
+  width: 80%;
+  height: 350px;
+  background-color: #ee82ee;
 }

@@ -19,8 +19,12 @@ General
   padding-block: 30px;
 }
 
-footer .footer-top .container.footer {
-  padding: 5px 0 20px 0;
+footer .footer-top .container.footer-container {
+  padding: 10px 0 20px 0;
+}
+
+footer .footer-bottom .container.footer-container {
+  padding: 20px 0 0 0;
 }
 
 .content-container {
@@ -96,6 +100,19 @@ footer .container .card-container .card-small {
 
 footer .footer-top {
   border-bottom: 1px solid #fff;
+}
+
+/*----footer bottom----*/
+.navbar-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 10px;
+}
+
+.navbar-footer > * {
+  padding: 2px 5px;
 }
 
 /*------------
@@ -175,4 +192,13 @@ Debug
 .debug footer .container .card-container .card-small {
   background-color: #20b2aa;
   border: dashed 2px #fff;
+}
+
+.debug footer .container .navbar-footer {
+  background-color: #7fffd4;
+}
+
+.debug footer .container .navbar-footer > * {
+  border: 1px dashed #000;
+  background-color: #f08080;
 }

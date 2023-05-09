@@ -128,3 +128,9 @@ Debug
   height: 100%;
   background-color: #ffc0cb;
 }
+
+/*----section big-----*/
+.debug .section-main.high .container .content-container {
+  height: 600px;
+  background-color: #228b22;
+}
